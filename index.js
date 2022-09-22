@@ -192,8 +192,44 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
+// 
+
+let ai = Math.round(Math.random() *(3 -1) +1);
+function compChoice(){
+    if (ai === 1) {
+    return "rock";
+  } else if (ai === 2) {
+    return "paper";
+  } else {
+    return "scissors";
+  }
+}
+let user = compChoice (ai);
+
 function game(user, computer){
-  /*add your code here*/
+  if(computer === user) {
+    return "it's a tie";
+  } else if (computer !== user){
+    if (user === "scissors") {
+      if(computer === "rock"){
+      return "you lose!";
+      } else {
+        return "you win!";
+      }
+    } else if (user === "rock"){
+      if(computer === "paper"){
+        return "you lose!";
+        } else {
+          return "you win!";
+        }
+    } else if (user === "paper") {
+      if(computer === "scissors"){
+        return "you lose!";
+        } else {
+          return "you win!";
+        }
+    }
+  }
 }
 
 
