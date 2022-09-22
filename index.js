@@ -75,11 +75,11 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(num1, num2){
-  return num1 * num2;
+function multiply(a, b){
+  return a * b;
 }
 multiply(25,1589)
-multiply(a,b)
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -144,7 +144,6 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-// I am attempting the sprint 2 module 2 project and my code grade and vs code are now working properly.  my code grade is telling me that the test suite failed, and the node in VS code terminal states it has crashed and is waiting for file changes before starting. Despite making changes to my file it won't restart.  I am not sure how to fix it so I can submit my file for grading.
 
 function hungryDog(weight, age){
   if (age >= 1) {
