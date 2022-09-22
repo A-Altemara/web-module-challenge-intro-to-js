@@ -279,10 +279,15 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
-}
+let sodaBottles = 5
+function annoyingSong(sodaBottles){
+  return `${sodaBottles} bottles of soda on the wall, ${sodaBottles} bottles of soda, take one down pass it around ${sodaBottles-1} bottles of soda on the wall`;
 
+} console.log(annoyingSong(sodaBottles))
+
+for (let i = sodaBottles; i > 1; i--) {
+  console.log(annoyingSong(i));
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
