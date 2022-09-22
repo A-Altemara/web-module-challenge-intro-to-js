@@ -144,29 +144,30 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
+// I am attempting the sprint 2 module 2 project and my code grade and vs code are now working properly.  my code grade is telling me that the test suite failed, and the node in VS code terminal states it has crashed and is waiting for file changes before starting. Despite making changes to my file it won't restart.  I am not sure how to fix it so I can submit my file for grading.
+
 function hungryDog(weight, age){
-  while (age >= 1) {
+  if (age >= 1) {
     if (weight <= 5) {
       return (weight * .05)
-    } else if (weight >= 6 || weight <= 10) {
+    } else if (weight >= 6 && weight <= 10) {
       return (weight * .04)
-    } else if (weight >= 11 || weight <= 15) {
+    } else if (weight >= 11 && weight <= 15) {
       return (weight * .03)
     } else {
       return (weight * .02)
     }
-  }
-  while (age < 1) {
+  } else if (age < 1) {
     if (age <= .33) {
       return (weight * .1)
-    } else if (age = .33 || age <= .58) {
+    } else if (age >= .33 && age <= .58) {
       return (weight * .05)
     } else {
       return (weight * .04)
     }
-    }
   }
-  console.log(hungryDog(15, 1))
+}
+(hungryDog(15, 1))
 
 
 
